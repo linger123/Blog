@@ -1,0 +1,46 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "";
+}
+
+<div class="container p-3">
+     <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Categories</h2>
+        </div>
+        <div class="col-6">
+          <a asp-page="CreerCategory/Index" class="btn btn-primary">Add</a>
+        </div>
+     </div>
+     <div class="row pt-4">
+        <div class="col-6">
+            <div class="list-group">
+                @foreach (var category in Model.Categories)
+                {
+                   <a asp-page="EditerCategory/Index" asp-route-id="@category.Id" class="list-group-item list-group-item-action">@category.Title</a>
+                }
+            </div>
+        </div>
+     </div>
+</div>
+<div class="container p-3">
+     <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Posts</h2>
+        </div>
+        <div class="col-6">
+          <a asp-page="CreerPost/Index" class="btn btn-primary"> Add</a>
+        </div>
+     </div>
+      <div class="row pt-4">
+        <div class="col-6">
+           <div class="list-group">
+                @foreach (var post in Model.Posts)
+                {
+                   <a asp-page="EditerPost/Index" asp-route-id="@post.Id" class="list-group-item list-group-item-action">@post.Title</a>
+                }
+            </div>
+        </div>
+     </div>
+</div>
