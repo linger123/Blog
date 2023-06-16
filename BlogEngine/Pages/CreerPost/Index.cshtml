@@ -1,13 +1,14 @@
 @page
 @model BlogEngine.Pages.CreerPost.CreerPostModel
 @{
-    ViewData["Title"] = "- Add Post";
+    var titre = "Add Post";
+    ViewData["Title"] = $"- {titre}";
 }
 
 <form method="post">
     <div class="border p-3 mt-4">
         <div class="row pb-2">
-            <h2 class="text-primary pl-3">@ViewData["Title"]</h2>
+            <h2 class="text-primary pl-3">@titre</h2>
             <hr />
         </div>
         <div class="mb-3">

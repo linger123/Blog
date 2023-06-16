@@ -15,11 +15,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 
 var serverVersion = ServerVersion.AutoDetect(connectionString);
 
-builder.Services.AddDbContext<BlogEngineContext>(options =>
-        {
-            options.UseMySql(connectionString, serverVersion);
-            options.EnableSensitiveDataLogging();
-        });
+builder.Services.AddDbContext<BlogEngineContext>(options => options.UseMySql(connectionString, serverVersion));
 
 builder.Services.AddScoped<IPostRepository, PostRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();

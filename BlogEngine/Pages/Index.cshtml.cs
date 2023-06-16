@@ -1,6 +1,4 @@
 ﻿
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using BlogEngine.Models;
 using BlogEngine.Services.Interfaces;

@@ -1,13 +1,14 @@
 @page
 @model BlogEngine.Pages.CreerCategory.CreerCategoryModel
 @{
-    ViewData["Title"] = "- Add Category";
+    var titre = "Add Category";
+    ViewData["Title"] = $"- {titre}";
 }
 
 <form method="post">
     <div class="border p-3 mt-4">
         <div class="row pb-2">
-            <h2 class="text-primary pl-3">@ViewData["Title"]</h2>
+            <h2 class="text-primary pl-3">@titre</h2>
             <hr />
         </div>
         <div class="mb-3">

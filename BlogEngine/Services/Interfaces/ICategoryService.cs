@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using BlogEngine.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 

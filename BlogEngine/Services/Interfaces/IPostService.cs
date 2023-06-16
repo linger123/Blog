@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using BlogEngine.Models;
 
 namespace BlogEngine.Services.Interfaces;

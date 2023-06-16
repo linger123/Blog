@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
 using BlogEngine.Services.Interfaces;
 using BlogEngine.Domaine.Repositories.Posts;
 using BlogEngine.Domaine.Entites; 

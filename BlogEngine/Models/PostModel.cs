@@ -1,7 +1,5 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 using BlogEngine.Domaine.Entites;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Text.Json.Serialization;
 
 namespace BlogEngine.Models;
@@ -51,7 +49,7 @@ public class PostModel
         post.CategoryId = model.CategoryId;
         post.Title = model.Title;
         post.Content = model.Content;
-        post.PublicationDate = model.PublicationDate.Value;
+        post.PublicationDate = model.PublicationDate!.Value;
 
         return post;
     }

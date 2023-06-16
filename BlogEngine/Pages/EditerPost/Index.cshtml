@@ -1,7 +1,8 @@
 @page "{id:int?}"
 @model BlogEngine.Pages.EditerPost.EditerPostModel
 @{
-    ViewData["Title"] = "- Edit Post";
+    var titre = "Edit Post";
+    ViewData["Title"] = $"- {titre}";
 }
 
 <form method="post">
@@ -9,7 +10,7 @@
     <input hidden asp-for="Post.TitleCache" />
     <div class="border p-3 mt-4">
         <div class="row pb-2">
-            <h2 class="text-primary pl-3">@ViewData["Title"]</h2>
+            <h2 class="text-primary pl-3">@titre</h2>
             <hr />
         </div>
         <div class="mb-3">

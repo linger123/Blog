@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogEngine", "BlogEngine\BlogEngine.csproj", "{4B3D0E10-1E06-4D00-8F14-D203F9B9F464}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogEngineTests", "BlogEngineTests\BlogEngineTests.csproj", "{89C607FC-878A-44A8-A876-C911A84DC0B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{4B3D0E10-1E06-4D00-8F14-D203F9B9F464}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B3D0E10-1E06-4D00-8F14-D203F9B9F464}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B3D0E10-1E06-4D00-8F14-D203F9B9F464}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89C607FC-878A-44A8-A876-C911A84DC0B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89C607FC-878A-44A8-A876-C911A84DC0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89C607FC-878A-44A8-A876-C911A84DC0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89C607FC-878A-44A8-A876-C911A84DC0B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
